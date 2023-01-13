@@ -60,7 +60,7 @@
           </li>
 
           <li>
-            <a href="/">Mis compras</a>
+            <a href="">Mis compras</a>
             <i class="fa-solid fa-basket-shopping"></i>
           </li>
         </ul>
@@ -76,74 +76,136 @@
       />
     </header>
     <main>
-      <form action="/register" method="POST">
-        <label for="name">Nombre completo:</label> <br />
+      <form class="form" action="/">
+        <label for="name">Nombre completo:</label>
         <input
           type="text"
           id="name"
           name="name"
           placeholder="Nombre y apellido"
-          required
-        /><br />
+        />
 
-        <label for="user">Nombre de ususario:</label> <br />
+        <label for="user">Nombre de ususario:</label>
         <input
           type="text"
           id="user"
           name="user"
           placeholder="Nombre de usuario"
-          required
-        /><br />
+          minlength="4"
+        />
 
-        <label for="email">email:</label> <br />
+        <label for="email">Email:</label>
         <input
           type="email"
           id="email"
           name="email"
           placeholder="Nombre de usuario"
-          required
-        /><br />
+        />
 
-        <label for="birthday">Birthday:</label> <br />
-        <input type="date" id="birthday" name="birthday" required /><br />
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" />
 
-        <label for="location">domicilio:</label><br />
+        <label for="location">Domicilio:</label>
         <input
           type="text"
           id="location"
           name="location"
           placeholder="domicilio"
-          required
-        /><br />
-
-        <label for="user-type">¿Eres comprador o vendedor?</label><br />
-        <input type="radio" id="buyer" name="user-type" value="buyer" />
-        <label for="buyer">Comprador</label>
-
-        <input type="radio" id="seller" name="user-type" value="seller" />
-        <label for="seller">Vendedor</label><br />
-
-        <label>Selecciona tus intereses:</label><br />
-        <input
-          type="checkbox"
-          id="electronics"
-          name="interests"
-          value="electronics"
         />
-        <label for="electronics">Electro</label><br />
 
-        <input type="checkbox" id="fashion" name="interests" value="fashion" />
-        <label for="fashion">Moda</label><br />
+        <label for="user-type">¿Eres comprador o vendedor?</label>
+        <div class="user-type">
+          <input
+            type="radio"
+            id="buyer"
+            name="user-type"
+            value="buyer"
+            class="user-option"
+          />Comprador
+        </div>
 
-        <input type="checkbox" id="home" name="interests" value="home" />
-        <label for="home">Hogar</label><br />
+        <div class="user-type">
+          <input
+            type="radio"
+            id="seller"
+            name="user-type"
+            value="seller"
+            class="user-option"
+          />Vendedor
+        </div>
 
-        <input type="checkbox" id="toys" name="interests" value="toys" />
-        <label for="toys">Jugetería</label><br />
+        <label>Selecciona tus intereses:</label>
 
-        <input type="checkbox" id="health" name="interests" value="health" />
-        <label for="health">Vida sana</label><br />
+        <div class="user-type">
+          <input
+            type="checkbox"
+            id="electronics"
+            name="interests"
+            value="electronics"
+            class="user-option"
+          />Electro
+        </div>
 
+        <div class="user-type">
+          <input
+            type="checkbox"
+            id="fashion"
+            name="interests"
+            value="fashion"
+            class="user-option"
+          />Moda
+        </div>
+
+        <div class="user-type">
+          <input
+            type="checkbox"
+            id="home"
+            name="interests"
+            value="home"
+            class="user-option"
+          />Hogar
+        </div>
+
+        <div class="user-type">
+          <input
+            type="checkbox"
+            id="toys"
+            name="interests"
+            value="toys"
+            class="user-option"
+          />Jugetería
+        </div>
+
+        <div class="user-type">
+          <input
+            type="checkbox"
+            id="health"
+            name="interests"
+            value="health"
+            class="user-option"
+          />Vida sana
+        </div>
+
+        <label for="photo">Coloca una foto tuya:</label>
+        <input type="file" name="photo" id="photo" />
+
+        <label for="password">Escriba su Contraseña</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Escriba su contraseña"
+        />
+
+        <input
+          type="password"
+          name="confirm-password"
+          id="confirm-password"
+          placeholder="confime su contraseña"
+        />
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
         <!-- <input type="submit" value="Enviar" /> -->
       </form>
     </main>

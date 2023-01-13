@@ -84,8 +84,58 @@ li a {
 }
 
 
+.form{
+  background-color: #ebebeb;
+  width: 90%;
+  max-width: 900px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
+.form label{
+  justify-content: flex-start;
+}
 
+.form input{
+  width: 60%;
+  height: 32px;
+  padding: 2px;   
+  margin: 0.5rem;
+  border: 1px solid #1259c3;
+}
+.form input:hover{
+  width: 90%;
+  border: 1px dashed #772ce8;
+  transition: 1000ms;
+}
+.user-type{
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.user-option{
+  justify-content: flex-start;
+  display: block;
+}
+
+.form button{
+  background-color: #1259c3;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  margin: 5px;
+}
+.form button:hover{
+  background-color: #772ce8;
+  color: #fafafa;
+  border: 25px;
+  padding: 1rem 2rem;
+  transition: 2000ms;
+}
 
 footer {
   text-align: center;

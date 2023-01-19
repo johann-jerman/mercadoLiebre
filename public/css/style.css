@@ -92,7 +92,10 @@ li a {
   color: #fff;
   margin: auto;
 }
-
+.home-banner{
+  width: 100vw;
+  padding: 0;
+}
 main {
   width: 95vw;
   margin: 0 auto;
@@ -219,7 +222,13 @@ footer section i:hover{
 
 /* media querys desktop */
 @media (min-width: 769px) {
-  
+  section.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
   .nav-all{
     display: flex;

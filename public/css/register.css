@@ -27,6 +27,7 @@ header {
   flex-wrap: wrap;
 }
 
+
 .logo-liebre {
   height: 45%;
   width: 45%;
@@ -59,7 +60,19 @@ input {
   font-size: 12px;
   text-align: center;
 }
-
+.navegation-conteiner{
+  display: flex;
+  justify-content: space-between;
+}
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style:none;
+}
+li{
+  text-decoration: none;
+  margin: 10px;
+}
 li a {
   color: #000;
   text-decoration: none;
@@ -165,6 +178,7 @@ footer section i {
     height: 50px;
     margin: auto 0;
   }
+  
   .burger-menu {
     display: none;
   }
